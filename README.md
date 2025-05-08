@@ -46,8 +46,10 @@ flutter run
 ---
 
 🔑 API Key Setup
+
 This project uses OpenWeatherMap 
 You can get a free key from: https://openweathermap.org/appid
+
 Replace your API key in weather_cubit.dart:
 ```bash
 final apiKey = 'YOUR_API_KEY_HERE';
