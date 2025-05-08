@@ -1,16 +1,72 @@
-# weather_app
+# 🌤️ Weather App with HydratedCubit (Flutter)
 
-A new Flutter project.
+This is a simple weather app built using **Flutter**, **HydratedCubit**, and the **OpenWeatherMap API**.  
+It demonstrates how to fetch data from an API and **persist state across app restarts** using `hydrated_bloc`.
 
-## Getting Started
+---
 
-This project is a starting point for a Flutter application.
+## 🔧 Features
 
-A few resources to get you started if this is your first Flutter project:
+- 🔍 Search weather by **city name**
+- 💾 **State caching** with HydratedCubit
+- 🌐 Weather data from OpenWeatherMap API
+- 📱 Clean and responsive UI
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+---
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## 📸 Screenshots
+
+| Search City | Weather Result |
+|-------------|----------------|
+| ![Search](screenshots/search.png) | ![Result](screenshots/result.png) |
+
+> Add screenshots in `screenshots/` folder and update image paths.
+
+---
+
+## 🚀 Getting Started
+
+1. Clone this repo
+
+```bash
+git clone https://github.com/your-username/weather_hydrated_cubit.git
+cd weather_hydrated_cubit
+```
+
+2. Install packages
+```bash
+flutter pub get
+```
+
+3. Run the app
+```bash
+flutter run
+```
+
+---
+
+🔑 API Key Setup
+This project uses OpenWeatherMap 
+You can get a free key from: https://openweathermap.org/appid
+Replace your API key in weather_cubit.dart:
+```bash
+final apiKey = 'YOUR_API_KEY_HERE';
+```
+
+---
+🗂️ Project Structure
+```bash
+lib/
+│
+├── weather_cubit.dart        # Logic & API call
+├── weather_state.dart        # Serializable state for HydratedCubit
+├── weather_screen.dart       # UI
+└── main.dart                 # Entry point & HydratedBloc setup
+```
+
+---
+
+🧱 Built With
+- Flutter
+- HydratedBloc
+- OpenWeatherMap API
